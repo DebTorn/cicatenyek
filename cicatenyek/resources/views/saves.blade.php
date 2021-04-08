@@ -6,6 +6,7 @@
 
 @section('content')
     <div class="container text-center">
+        <div class="alert" role="alert" id="main_alert"></div>
         <div class="row">
             <div class="col-sm-12">
                 <div class="table-responsive">

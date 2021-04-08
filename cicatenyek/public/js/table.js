@@ -18,15 +18,19 @@ $(document).ready(function(){
                             "<td>"+api.text+"</td>"
                         +"</tr>").appendTo("#saves_table");
                     },
-                    error: function(apiErr){
-                        console.log(JSON.stringify(apiErr));
+                    error: function(){
+                        $("#main_alert").addClass("alert-danger");
+                        $("#main_alert").text("Jelenleg nem megjeleníthető az adott tény!");
+                        $("#main_alert").show();
                     }
                 });
             });
             $(".fact_loader").hide();
         },
-        error: function(dbErr){
-            console.log(JSON.stringify(dbErr));
+        error: function(){
+            $("#main_alert").addClass("alert-danger");
+            $("#main_alert").text("Jelenleg nem megjeleníthető egy tény sem!");
+            $("#main_alert").show();
         }
     });
 });
