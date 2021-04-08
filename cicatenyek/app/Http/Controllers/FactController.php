@@ -20,4 +20,10 @@ class FactController extends Controller
             return 2;
         }
     }
+
+    public function table(){
+        $facts = Fact::all();
+
+        return response()->json($facts);
+    }
 }
