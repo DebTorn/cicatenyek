@@ -15,8 +15,7 @@ $(document).ready(function(){
                     dataType:"json",
                     success: function(api){
                         $("<tr>"+
-                            "<td>"+api.text+"</td>"+
-                            "<td>"+db[i].created_at+"</td>"
+                            "<td>"+api.text+"</td>"
                         +"</tr>").appendTo("#saves_table");
                     },
                     error: function(apiErr){

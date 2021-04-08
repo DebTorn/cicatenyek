@@ -12,8 +12,7 @@
                     <table class="table table-striped table-light mt-5" id="saves_table">
                         <thead>
                             <tr>
-                                <th>Tény</th>
-                                <th>Mentés dátuma</th>
+                                <th>Mentett tények</th>
                             </tr>
                         </thead>
                         <tbody>

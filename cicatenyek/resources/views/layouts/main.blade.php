@@ -10,13 +10,13 @@
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
         <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/bootstrap/bootstrap.min.css') }}">
 
         <!-- Bootstrap JS -->
-        <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+        <script src="{{ asset('js/bootstrap/bootstrap.min.js') }}"></script>
 
         <!-- JQuery -->
-        <script src="{{ asset('js/jquery.min.js') }}"></script>
+        <script src="{{ asset('js/jquery/jquery.min.js') }}"></script>
 
         <script>
             $.ajaxSetup({

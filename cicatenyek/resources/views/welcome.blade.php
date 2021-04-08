@@ -10,9 +10,8 @@
         <h3 class="text-center mt-4">Cicás tények</h3>
         <hr>
         <div class="alert" role="alert" id="main_alert"></div>
-        </div>
         @for($i = 0; $i < 3; $i++)
-            <div class="row d-felx justify-content-center mt-5">
+            <div class="row d-felx justify-content-center mt-4">
                 <div class="col-sm-6">
                     <div class="card">
                         <div class="card-body text-center">
@@ -54,7 +53,7 @@
                                 <form method="POST" id="fact_save_form">
                                     @csrf
                                     <input type="hidden" name="fact_id" id="fact_id" required>
-                                    <input type="submit" value="Mentés" class="btn btn-success">
+                                    <input type="submit" value="Mentés" class="btn btn-success" id="sub_btn">
                                 </form>
                             </div>
                             <div class="col-sm-4">

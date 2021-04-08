@@ -63,11 +63,14 @@ $(document).ready(function(){
             type:"POST",
             dataType:"json",
             data:{fact_id:$("#fact_id").attr("value")},
+            beforeSend: function(){
+                $("#sub_btn").prop("disabled",true);
+            },
             success: function(succ){
                 $("#save_alert").addClass("alert-success");
                 $("#save_alert").text("Sikeres feltöltés!");
                 $("#save_alert").show();
-                $("#save_alert").delay(1000);
+                $("#save_alert").delay(800);
                 $("#save_alert").hide("slow", function(){
                     $("#save_alert").removeClass("alert-success");
                     location.reload();
